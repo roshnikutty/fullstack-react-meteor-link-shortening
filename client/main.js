@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppHeader from './components/AppHeader';
+import LinkForm from './components/LinkForm';
+import LinkList from './components/LinkList';
 
 const App = () => {
     return (
-        <div>Meteor-Link-Shortening example</div>
+        <div>
+            <AppHeader />
+            <LinkForm />
+            <LinkList />
+        </div>
     )
 }
 
