@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class LinkForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
-        console.log(this.refs.userInpval.value);
+        // console.log(this.refs.userInpval.value);
+        Meteor.call('links.insert', this.refs.userInpval.value);
     }
     render() {
         return (
